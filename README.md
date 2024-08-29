@@ -13,7 +13,8 @@ Guide de création d'un projet django.
 - Pour le dossier static, créer une liste STATICFILES_DIRS puis ajouter la liste des dossiers static créer ([BASE_DIR / 'static'])
 - Dans le fichier urls.py dans le dossier portant le nom de votre projet, d'abord importer le module include de django.urls puis ajouter un chemin pointant vers le fichier urls.py que vous aller créer dans votre application (path('nom_de_lUrl/', include('nom_de_lApplication.urls'))
 - Créer un fichier urls.py dans votre application puis donner lui un nom dans le fichier (app_name = 'nom_de_lApplication') puis definisser la liste urlpatterns
-- Dans le dossier templates créer un fichier base.html qui sera le fichier html de base à étendre pour toute nos fichiers html 
+- Dans le dossier templates créer un fichier base.html qui sera le fichier html de base à étendre pour toute nos fichiers html
+- Dans le dossier static créer les dossiers css pour les styles, js pour les scripts et images pour les images
 - Configurer le dictionnaire DATABASES si vous avez une base de donnée et en fonction de votre SGBD installer le connecteur approprié
 - Créer les migratrions (python manage.py makemigrations)
 - Appliquer les migrations (python manage.py migrate)
